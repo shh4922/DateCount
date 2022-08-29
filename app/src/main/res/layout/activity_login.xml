@@ -1,47 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView"
+        android:textSize="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/font_title"
+        android:text="✏️Login" />
+
+
 
     <EditText
         android:id="@+id/tv_email"
-        android:layout_width="wrap_content"
+        android:background="@drawable/edittext_round"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="email"
+        android:gravity="center"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="117dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="117dp" />
 
     <EditText
         android:id="@+id/tv_password"
-        android:layout_width="wrap_content"
+        android:background="@drawable/edittext_round"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:hint="password"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="216dp"
         tools:ignore="MissingConstraints" />
+
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/btn_login"
         android:text="로그인"
+        android:background="@drawable/btn_round"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="469dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="469dp" />
 
     <Button
         android:id="@+id/btn_signup"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/btn_sighup"
+        android:text="회원가입"
+        android:background="@drawable/btn_round"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="465dp"
-        tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:layout_editor_absoluteY="465dp" />
+
+
+</LinearLayout>

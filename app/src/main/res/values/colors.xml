@@ -10,4 +10,8 @@
     <color name="onClick">#5168FF</color>
     <color name="gray">#5A5757</color>
     <color name="red">#D31F1F</color>
+    <color name="btn_login">#3DA1D8</color>
+    <color name="btn_sighup">#FFB332</color>
+    <color name="title_theme">#82A8CE</color>
+    <color name="intro">#2E3133</color>
 </resources>
