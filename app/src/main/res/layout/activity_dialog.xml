@@ -3,48 +3,50 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
     android:layout_margin="50sp"
-    >
+    android:background="@drawable/layout_round"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="시험일자와 이름을 입력해주세요"
         android:layout_margin="15dp"
-        android:textSize="20dp"
-        android:textColor="@color/black"/>
-
+        android:text="시험일자와 이름을 입력해주세요"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <EditText
-            android:id="@+id/et_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_margin="10dp"
-            android:inputType="textPersonName"
-            android:text="시험이름을 입력하시오"
-            />
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:hint="시험이름을 입력해주세요" />
 
     <Button
         android:id="@+id/btn_date"
+        style="?android:spinnerStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text="22 / 03 / 21"
         android:textColor="@color/black"
-        style="?android:spinnerStyle"
-        android:layout_margin="20dp"
-        android:textSize="30dp"/>
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/btn_ok"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:background="@drawable/btn_round"
         android:padding="10dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange"
         android:text="저장" />
+
 
 </LinearLayout>

@@ -65,4 +65,7 @@ dependencies {
     //리스트를 위한 카드뷰 #2022/08/18
     implementation("androidx.cardview:cardview:1.0.0")
 
+    // Also declare the dependency for the Google Play services library and specify its version
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
 }

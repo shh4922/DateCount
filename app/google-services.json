@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "1043558588113",
+    "firebase_url": "https://datecount-4217c-default-rtdb.firebaseio.com",
     "project_id": "datecount-4217c",
     "storage_bucket": "datecount-4217c.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "1043558588113-1oredfjn7mplpckhosv49rku8revffvt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mnu.myapplication",
+            "certificate_hash": "e7395f104520d918b81271a13cb567b70a7be0c1"
+          }
+        },
         {
           "client_id": "1043558588113-k6cgqdtbcjq6p5i8tsnjqf9usqf4evq2.apps.googleusercontent.com",
           "client_type": 3

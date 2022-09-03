@@ -1,6 +1,7 @@
 package com.mnu.myapplication.data
 
 data class DateModel(
-    val date:Int?=null,
-    val name:String?=null
-    )
+    val count:Int?=null,
+    val testname:String?=null
+
+)
