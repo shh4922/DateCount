@@ -91,7 +91,7 @@ class HomeFragment : Fragment() ,View.OnClickListener {
 
                     for (dateSnapshot in  snapshot.children){
                         Log.d(TAG,"데이터불러옴")
-                        Log.d(TAG,dateSnapshot.)
+//                        Log.d(TAG,dateSnapshot.)
                         //val currentdata = dateSnapshot.getValue(DateModel::class.java)
                         val currentdata = dateSnapshot.getValue<DateModel>()
                         //!!이 뭐임 대체

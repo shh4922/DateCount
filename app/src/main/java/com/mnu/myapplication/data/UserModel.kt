@@ -1,7 +1,7 @@
 package com.mnu.myapplication.data
 
 data class UserModel(
-    var email:String?,
-    var password:String?
+    var email:String,
+    var password:String
 
 )
