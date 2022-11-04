@@ -6,38 +6,40 @@
     android:layout_margin="20dp"
     app:cardCornerRadius="30dp">
     <LinearLayout
+        android:background="@color/date_color"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="20dp">
-
-
+        android:padding="12dp">
         <TextView
-            android:id="@+id/tv_testname"
+            android:id="@+id/home_rc_tv_testname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="30dp"
             android:text="정보처리기사"
-            android:textSize="25sp">
+            android:textStyle="bold"
+            android:textSize="25dp">
         </TextView>
 
         <TextView
-            android:id="@+id/tv_date"
+            android:id="@+id/home_rc_tv_default"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="30dp"
+            android:textStyle="bold"
             android:text="D - "
             android:textSize="25sp">
         </TextView>
 
         <TextView
-            android:id="@+id/tv_count"
+            android:id="@+id/home_rc_tv_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="1024"
+            android:textStyle="bold"
             android:textSize="25sp"/>
 
     </LinearLayout>

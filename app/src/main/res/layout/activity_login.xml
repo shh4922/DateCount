@@ -22,7 +22,7 @@
 
     <EditText
         android:id="@+id/tv_email"
-        android:background="@drawable/edittext_round"
+        android:background="@drawable/edittext_round_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -38,7 +38,7 @@
 
     <EditText
         android:id="@+id/tv_password"
-        android:background="@drawable/edittext_round"
+        android:background="@drawable/edittext_round_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -80,12 +80,5 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="239dp"
         tools:layout_editor_absoluteY="465dp" />
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/btn_google"
-        android:background="@drawable/btn_round"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
 
 </LinearLayout>

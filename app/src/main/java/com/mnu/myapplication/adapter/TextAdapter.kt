@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.mnu.myapplication.R
+import com.mnu.myapplication.data.TextData
 import com.mnu.myapplication.data.TextModel
 
 class TextAdapter(private val textlist:ArrayList<TextModel>) : RecyclerView.Adapter<TextAdapter.TextViewHolder>(){
@@ -29,7 +30,12 @@ class TextAdapter(private val textlist:ArrayList<TextModel>) : RecyclerView.Adap
     }
 
     class TextViewHolder(itemView:View): RecyclerView.ViewHolder(itemView){
-        val texts  = itemView.findViewById<TextView>(R.id.tv_text)//명언
+        val texts  = itemView.findViewById<TextView>(R.id.list_rc_tv_text)//명언
+
+        @SuppressLint("SetTextI18n")
+        fun bind(textdata : TextData){
+
+        }
     }
 
 }

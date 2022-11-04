@@ -15,4 +15,6 @@
     <color name="title_theme">#82A8CE</color>
     <color name="intro">#2E3133</color>
     <color name="orange">#EA9C1A</color>
+    <color name="backlayout">#9C9180</color>
+    <color name="date_color">#8C7045</color>
 </resources>

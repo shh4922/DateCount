@@ -66,6 +66,13 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
 
     // Also declare the dependency for the Google Play services library and specify its version
+    //이게 뭐때문에 추가했는지 기억이안나..
     implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    //리모트 컨핑 사용을 위해
+    implementation 'com.google.firebase:firebase-config-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+
 
 }

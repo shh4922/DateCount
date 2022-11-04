@@ -1,7 +1,10 @@
 package com.mnu.myapplication.data
 
+import java.util.*
+
 data class DateModel(
-    val count:Int?=null,
-    val testname:String?=null
+    var email: String ?=null,
+    var date: Calendar? =null,
+    var testname:String?=null
 
 )

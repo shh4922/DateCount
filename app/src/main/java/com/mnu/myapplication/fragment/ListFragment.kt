@@ -1,15 +1,11 @@
 package com.mnu.myapplication.fragment
 
-import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.mnu.myapplication.R
 import com.mnu.myapplication.adapter.TextAdapter
 import com.mnu.myapplication.data.TextModel
 import com.mnu.myapplication.databinding.FragmentListBinding

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backlayout"
     tools:context=".fragment.HomeFragment">
 
     <LinearLayout
@@ -11,31 +12,36 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-
         <TextView
-            android:id="@+id/tv_default"
-            android:textSize="20dp"
+            android:id="@+id/home_tv_title"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textColor="@color/gray"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_intro"
+            android:textStyle="bold"
             android:text="오늘의 쓴소리" />
+
         <TextView
-            android:id="@+id/tv_show"
+            android:background="@drawable/edittext_round"
+            android:id="@+id/home_tv_texts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="시발 일찍좀 처일어나서 공부해라"
             android:gravity="center"
-            android:textColor="@color/red"
-            android:textSize="25dp"/>
+            android:text="시발 정신좀 차려.."
+            android:fontFamily="@font/font_title"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="23dp"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rc_date"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/rc_date_item" />
-
+            android:layout_height="match_parent"
+             />
+<!--tools:listitem="@layout/rc_date_item"-->
     </LinearLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_plus"
@@ -49,6 +55,5 @@
         android:backgroundTint="@color/gray"
         android:tint="@color/white"
         app:rippleColor="@color/red"
-
         android:src="@drawable/ic_plus" />
     </FrameLayout>
