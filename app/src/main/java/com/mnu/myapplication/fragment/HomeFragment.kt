@@ -84,31 +84,31 @@ class HomeFragment : Fragment() ,View.OnClickListener {
         //경로는 Date_Data에 있는 자기자신계정의 UID로
         databaseReference = FirebaseDatabase.getInstance().getReference("Date_Data").child(auth.currentUser?.uid.toString())
         Log.d(TAG+" 현재 로그인한 사람은 : ", auth.currentUser?.uid.toString())
-        databaseReference.addValueEventListener(object :ValueEventListener{
-
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()){
-
-                    for (dateSnapshot in  snapshot.children){
-                        Log.d(TAG,"데이터불러옴")
-//                        Log.d(TAG,dateSnapshot.)
-                        //val currentdata = dateSnapshot.getValue(DateModel::class.java)
-                        val currentdata = dateSnapshot.getValue<DateModel>()
-                        //!!이 뭐임 대체
-                        datemodel.add(currentdata!!)
-                    }
-                    Log.d(TAG,"데이터 다 저장함")
-                    binding.rcDate.adapter = DateAdapter(datemodel)
-
-                    Log.d(TAG,"데이터 다 불러서 보여준거임")
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                Log.d(TAG,"ㅂㅅ 실패함 ㅋㅋ")
-            }
-
-        })
+//        databaseReference.addValueEventListener(object :ValueEventListener{
+//
+//            override fun onDataChange(snapshot: DataSnapshot) {
+//                if (snapshot.exists()){
+//
+//                    for (dateSnapshot in  snapshot.children){
+//                        Log.d(TAG,"데이터불러옴")
+////                        Log.d(TAG,dateSnapshot.)
+//                        //val currentdata = dateSnapshot.getValue(DateModel::class.java)
+//                        val currentdata = dateSnapshot.getValue<DateModel>()
+//                        //!!이 뭐임 대체
+//                        datemodel.add(currentdata!!)
+//                    }
+//                    Log.d(TAG,"데이터 다 저장함")
+//                    binding.rcDate.adapter = DateAdapter(datemodel)
+//
+//                    Log.d(TAG,"데이터 다 불러서 보여준거임")
+//                }
+//            }
+//
+//            override fun onCancelled(error: DatabaseError) {
+//                Log.d(TAG,"ㅂㅅ 실패함 ㅋㅋ")
+//            }
+//
+//        })
     }
 
 

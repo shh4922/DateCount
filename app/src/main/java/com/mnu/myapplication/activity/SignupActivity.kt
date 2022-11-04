@@ -25,7 +25,6 @@ class SignupActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnSignupOk.setOnClickListener(this)
-        Log.d(TAG, "회원가입페이지 온")
 
     }
 
