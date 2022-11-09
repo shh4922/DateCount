@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mnu.myapplication.adapter.TextAdapter
-import com.mnu.myapplication.data.TextModel
+import com.mnu.myapplication.adapter.TextModel
 import com.mnu.myapplication.databinding.FragmentListBinding
 import kotlinx.android.synthetic.main.fragment_list.*
 

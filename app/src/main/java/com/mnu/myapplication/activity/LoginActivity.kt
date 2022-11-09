@@ -5,16 +5,18 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.mnu.myapplication.Contractor.Presenter.LoginPresenter
+import com.mnu.myapplication.presenter.LoginPresenter
 import com.mnu.myapplication.R
-import com.mnu.myapplication.Contractor.Interface.LoginInterface
+import com.mnu.myapplication.Contractor.LoginConstractor
 import com.mnu.myapplication.databinding.ActivityLoginBinding
 
 
-class LoginActivity : AppCompatActivity(), View.OnClickListener, LoginInterface.ViewInterface, LoginInterface.PresenterInterface {
-    private lateinit var binding: ActivityLoginBinding
+class LoginActivity : AppCompatActivity(), View.OnClickListener, LoginConstractor.View {
     val TAG: String = "로그"
-    var loginPresenter: LoginPresenter? = null
+
+    private lateinit var binding: ActivityLoginBinding
+    private lateinit var presenter: LoginPresenter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,45 +25,50 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, LoginInterface.
         binding.btnLogin.setOnClickListener(this)
         binding.btnSignup.setOnClickListener(this)
 
-
-        loginPresenter = LoginPresenter()
+        presenter = LoginPresenter()
 
     }
 
     override fun onStart() {
-        loginPresenter?.onStart(this,this)
+        presenter.view=this
         super.onStart()
     }
 
     override fun onStop() {
-        loginPresenter?.onStop()
-        loginPresenter = null
+        presenter.view=null
         super.onStop()
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btn_login -> {
-                loginPresenter?.Login(binding.tvEmail.text.toString(), binding.tvPassword.text.toString())
+                presenter?.Login(binding.tvEmail.text.toString(), binding.tvPassword.text.toString())
             }
             R.id.btn_signup -> {
-                loginPresenter?.moveToSignup()
+                moveToSignup()
             }
         }
     }
 
 
     /***
-     * 기능함수
+     * 토스트메시지
      */
-    override fun MakeToast(msg: String) {
+    override fun showToast(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
+    /***
+     * 로그인성공시 mainActivity로 이동
+     */
     override fun successToLogin() {
         startActivity(Intent(this, MainActivity::class.java))
     }
 
+
+    /***
+     * 회원가입을 누를시 SignupActivity로 이동
+     */
     override fun moveToSignup() {
         startActivity(Intent(this, SignupActivity::class.java))
     }
