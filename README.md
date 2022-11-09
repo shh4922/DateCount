@@ -18,7 +18,6 @@
 
 `kotlin` , `firebase` , `mvp` 
 
-
 ## 😎 결과
 <p align="center">
 <img width="318" alt="%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-05_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_3 28 22" src="https://user-images.githubusercontent.com/83321146/200812366-2ec6eee0-ffe8-458f-ac3b-d7e12edeeb21.png" width="20%" height="30%">
