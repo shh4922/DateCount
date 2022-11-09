@@ -1,16 +1,10 @@
 package com.mnu.myapplication.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.appcompat.view.menu.MenuView
 import androidx.recyclerview.widget.RecyclerView
-import com.mnu.myapplication.R
 import com.mnu.myapplication.adapter.DateAdapter.DateViewHolder
 import com.mnu.myapplication.data.DateModel
-import com.mnu.myapplication.data.TextData
 import com.mnu.myapplication.databinding.RcDateItemBinding
 
 
@@ -19,16 +13,11 @@ class DateAdapter(private val datelist:ArrayList<DateModel>) : RecyclerView.Adap
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DateViewHolder {
-//        val itemView = LayoutInflater.from(parent.context)
-//            .inflate(R.layout.rc_date_item, parent,false)
-//        return DateAdapter.DateViewHolder(itemView)
         val binding = RcDateItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return DateViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: DateViewHolder, position: Int) {
-
-        // 받
         holder.bind(datelist[position])
     }
 
@@ -47,8 +36,8 @@ class DateAdapter(private val datelist:ArrayList<DateModel>) : RecyclerView.Adap
 
     class DateViewHolder(private val binding: RcDateItemBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(dateModel: DateModel){
-            binding.homeRcTvDate.text = dateModel.date.toString()
-            binding.homeRcTvTestname.text = dateModel.testname
+            binding.homeTestname.text=dateModel.testname
+            binding.homeDate.text=dateModel.date.toString()
         }
     }
 

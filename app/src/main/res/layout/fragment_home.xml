@@ -40,8 +40,9 @@
             android:id="@+id/rc_date"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-             />
-<!--tools:listitem="@layout/rc_date_item"-->
+            tools:listitem="@layout/rc_date_item"
+            />
+
     </LinearLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_plus"
